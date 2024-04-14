@@ -27,47 +27,32 @@
         </ul>
         <br>
         <hr>
-    <h3>Calculate price</h3>
 
-    <h4>Glass price calculator</h4>
+    <p><b>Disclaimer!</b> The price cannot be accurately determined without one of our employees taking 
+        precise measurements. This calculator is a simulation intended for personal use to provide a 
+        rough estimate of window prices.</p>
+
+        <hr>
+
+    <h3>Calculate price</h3>
         <div>
-            <label for="glassh">Glass height:</label>
+            <label for="glassh">Window height:</label>
             <input type="number" id="glassh" name="glassh" value="100" min="100">
 
-            <label for="glassw">Glass width:</label>
+            <label for="glassw">Window width:</label>
             <input type="number" id="glassw" name="glassw" value="100" min="100">
         </div>
         <br>
-        <div>
-        <label for="glassType"> <b>Glass type: </b></label>
-        </div>
 
         <div>
-        <label for="cg">Clear glass</label>
-        <input type="radio" name="glassType" id="cg" value="cg">
+        <label for="profile"> <b>Profile:</b> </label>
+        <label for="salamander"> Salamander</label>
+        <input type="radio" id="salamander" name="profile" value="salamander">
+        <label for="alumil"> Alumil</label>
+        <input type="radio" id="alumil" name="profile" value="alumil">
         </div>
-
-        <div>
-        <label for="ctg">Clear Toughened glass</label>
-        <input type="radio" name="glassType" id="ctg" value="ctg">
-        </div>
-
-        <div>
-        <label for="og">Obscure glass</label>
-        <input type="radio" name="glassType" id="og" value="og">
-        </div>
-
-        <div>
-        <label for="otg">Obscure Toughened glass</label>
-        <input type="radio" name="glassType" id="otg" value="otg">
-        </div>
-
         <br>
-        <button type="button">Calculate</button>
 
-    <br>
-    <hr>
-    <br>
     <div>
         <label for="texture"><b>Select a colour of the profile:</b></label>
         <select name="texture" id="texture">
@@ -84,8 +69,9 @@
             <option value="oilasilky"> Oila silky</option>
             <option value="noir"> Noir</option>
             <option value="giris"> Giris</option>
-        </select> <br>
+        </select> 
     </div>
+    <br>
     <div>
         <label for="reinforcment"> <b>Reinforcment:</b> </label>
         <label for="rpr">Reinforced profile</label>
@@ -94,7 +80,48 @@
         <input type="radio" id="gsr" name="reinforcment" value="gsr">
         <label for="nor">No reinforcment</label>
         <input type="radio" id="nor" name="reinforcment" value="nor"> 
-    </div>
+    </div>    
+    
+    <br>
+    <hr>
+    <br>
+        <div>
+        <label for="glassType"> <b>Glass type: </b></label>
+        </div>
+
+        <div>
+        <label for="cg">Clear glass</label>
+        <input type="radio" name="glassType" id="cg" value="cg">
+        </div>
+
+        <div>
+        <label for="ctg">Clear Toughened glass</label>
+        <input type="radio" name="glassType" id="ctg" value="ctg">
+        </div>
+
+        <div>
+            <label for="tg">Tinted glass</label>
+            <input type="radio" name="glassType" id="tg" value="tg">
+            </div>
+    
+            <div>
+            <label for="ttg">Tinted Toughened glass</label>
+            <input type="radio" name="glassType" id="ttg" value="ttg">
+            </div>
+
+        <div>
+        <label for="og">Obscure glass</label>
+        <input type="radio" name="glassType" id="og" value="og">
+        </div>
+
+        <div>
+        <label for="otg">Obscure Toughened glass</label>
+        <input type="radio" name="glassType" id="otg" value="otg">
+        </div>
+
+        <br>
+        
+
 
     <br>
     <hr>
@@ -107,6 +134,17 @@
         <label for="ral">RAL instalation</label>
         <input type="radio" id="ral" name="instalation" value="ral">
     </div>
+    <br>
+    <button type="button">Calculate price</button>
+    <br>
+    <br>
+    <hr>
+    <p>If you wish to receive a detailed price calculation to your E-mail, input your E-mail down below.</p>
+    <form action="">
+        <label for="email">E-mail</label>
+        <input type="email" id="email">
 
+        <input type="submit">
+    </form>
 </body>
 </html>
